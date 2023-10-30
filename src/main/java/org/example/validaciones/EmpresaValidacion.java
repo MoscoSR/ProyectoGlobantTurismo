@@ -2,7 +2,7 @@ package org.example.validaciones;
 
 import org.example.utilidades.Util;
 
-public class LocalValidacion {
+public class EmpresaValidacion {
     Util util = new Util();
     public Boolean validarLocal(String nit) throws Exception {
         if (!util.buscarCoincidencia(nit, "[a-zA-Z]+$")) {

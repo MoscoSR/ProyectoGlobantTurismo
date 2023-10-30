@@ -9,7 +9,7 @@ public class UsuarioValidacion {
     // Metodos ordinarios.
 
     public Boolean  validarNombre(String nombre) throws  Exception {
-        if(!util.buscarCoincidencia(nombre, "/^\\w+([.-_+]?\\w+)*@\\w+([.-]?\\w+)*(\\.\\w{2,10})+$")) {
+        if(!util.buscarCoincidencia(nombre, "^[a-zA-Z]+$")) {
             throw  new Exception("Ingresa un nombre valido");
         }
         if (nombre.length()<10) {
@@ -27,7 +27,7 @@ public class UsuarioValidacion {
     }
 
     public Boolean valCorreo(String  correo) throws Exception {
-        if (!util.buscarCoincidencia(correo, "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}$")) {
+        if (!util.buscarCoincidencia(correo, "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$")) {
             throw new Exception("Digita un correo valido");
         }
         return true;

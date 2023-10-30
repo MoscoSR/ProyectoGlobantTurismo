@@ -1,13 +1,13 @@
 package org.example.entidades;
 
-public class Local {
+public class Empresa {
    //Constructores
 
-    public  Local () {
+    public Empresa() {
 
     }
 
-    public Local(Integer id, String nit, String nombre, Integer ubicacion, String descripcion) {
+    public Empresa(Integer id, String nit, String nombre, Integer ubicacion, String descripcion) {
         this.id = id;
         this.nit = nit;
         this.nombre = nombre;
@@ -53,7 +53,7 @@ public class Local {
         return descripcion;
     }
 
-    // Metodos setters.
+    // Metodos settetrs.
 
 
     public void setId(Integer id) {
